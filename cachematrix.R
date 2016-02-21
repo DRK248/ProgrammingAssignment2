@@ -31,8 +31,8 @@ makeCacheMatrix <- function(x = matrix()) {
   setInverse <- function(newInverse){inverse <<- newInverse}
   getInverse <- function(){inverse}
   
-  ## This list maintains the functions available to the special matrix objects
-  ## for easier access.
+  ## Create and return a list that maintains the functions available to the
+  ## special matrix objects for easier access.
   list(set = set, get = get, getCacheMatrix = getCacheMatrix,
        setInverse = setInverse, getInverse = getInverse)
 }
